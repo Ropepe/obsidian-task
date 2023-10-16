@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product page</title>
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/main.scss" />
+  <script src="js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  Hello
+  <div id="menu_mobile" class="mobile_menu">
+    <div class="mobile_menu_items">
+      <img onclick="closeMenu()" class="close_btn" src="images/close.svg" alt="menu">
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Tutorial</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <div class="navbar">
+        <div class="mobile_icons">
+          <img onclick="openMenu()" class="hamburger_mobile" src="images/gg_menu-left-alt.svg" alt="menu">
+          <a class="search_mobile" href="#"><img src="images/search.svg" alt="search"></a>
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Tutorial</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <ul>
+            <li><a class="search_desktop" href="#"><img src="images/search.svg" alt="search"></a></li>
+            <li><a href="#"><img src="images/bi_bag.svg" alt="profile"></a></li>
+            <li><a href="#"><img id="cartIcon" src="images/bi_bag2.svg" alt="cart"></a></li>
+          </ul>
+        </div>
+
+    </header>
+    <div class="tree_map_mobile">
+      <a href="#"><img src="images/Group.svg" alt="arrow"></a>
+      <p>ALL PRODUCTS / HAIRCARE / <span>RESTORATIVE HARI MASK</span></p>
+    </div>
+    <section class="hero">
+      <img class="hero_image" src="images/image3.jpg" />
+      <div class="right_container">
+        <div class="description">
+          <div class="tree_map">
+            <a href="#"><img src="images/Group.svg" alt="arrow"></a>
+            <p>ALL PRODUCTS / HAIRCARE/ RESTORATIVE HARI MASK</p>
+          </div>
+          <h1 class="title">RESTORATIVE HAIR MASK</h1>
+          <h2 class="subtitle">NUTURISHMENT IN A BOTTLE</h2>
+          <hr>
+          <p class="dsc_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+          </p>
+          <div class="badges">
+            <div class="box">
+              <img src="images/group199.svg" alt="epruvete">
+              <p>100% ORGANIC</p>
+            </div>
+            <div class="box">
+              <img src="images/group199.svg" alt="epruvete">
+              <p>100% ORGANIC</p>
+            </div>
+            <div class="box">
+              <img src="images/group199.svg" alt="epruvete">
+              <p>100% ORGANIC</p>
+            </div>
+            <div class="box">
+              <img src="images/group199.svg" alt="epruvete">
+              <p>100% ORGANIC</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="options">
+            <fieldset>
+              <div class="option_items">
+                <input type="radio" id="once" name="options" value="once" checked />
+                <label class="radio_label" for="once">Buy Once | $38</label>
+              </div>
+              <div class="option_items">
+                <input type="radio" id="sub" name="options" value="sub" />
+                <label class="radio_label" for="sub">Subscribe (SAVE 20%) | $30</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="checkout">
+            <div class="quantity">
+              <button id="dec" onclick="decrease()">-</button>
+              <input type="number" id="quantity_number" name="quantity" min="1" max="100" value="1" />
+              <button id="inc" onclick=increase()>+</button>
+            </div>
+            <button class="add_to_cart" onclick="addToCart()" id="addToCart">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ingredients">
+      <div class="ing_one">
+        <div class="firstLine">
+          <h2>Ingredients</h2>
+          <button onclick="readFirst()" id="myBtn">-</button>
+        </div>
+        <p id="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+        </p>
+      </div>
+      <hr>
+      <div class="ing_two">
+        <div class="firstLine">
+          <h2>Ingredients</h2>
+          <button onclick="readSecond()" id="myBtn2">+</button>
+        </div>
+        <p id="more2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere
+          ac ut.</p>
+      </div>
+      <hr>
+      <div class="ing_three">
+        <div class="firstLine">
+          <h2>Ingredients</h2>
+          <button onclick="readThird()" id="myBtn3">+</button>
+        </div>
+        <p id="more3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere
+          ac ut.</p>
+      </div>
+    </section>
+    <section class="products">
+      <h1>YOU MAY ALSO LIKE</h1>
+      <div class="carousel">
+        <div class="item">
+          <img src="images/image5.png" alt="product">
+          <div class="item_info">
+            <h2>HAND POMADE / POMMADE MAINS</h2>
+            <h3>NOURISHMENT FOR YOUR HANDS</h3>
+            <p>159,00 KR</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/image5.png" alt="product">
+          <div class="item_info">
+            <h2>RESTORATIVE HAIR MASK</h2>
+            <h3>NOURISHMENT FOR YOUR HANDS</h3>
+            <p>159,00 KR</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/image5.png" alt="product">
+          <div class="item_info">
+            <h2>RESTORATIVE HAIR MASK</h2>
+            <h3>NOURISHMENT FOR YOUR HANDS</h3>
+            <p>159,00 KR</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
-</html> 
+
+</html>

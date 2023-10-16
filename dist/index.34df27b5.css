@@ -1,5 +1,14 @@
-body {
-  background: #0ff;
+.navbar, .menu ul {
+  flex-direction: row;
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */
