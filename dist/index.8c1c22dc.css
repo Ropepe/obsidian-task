@@ -578,13 +578,8 @@
 }
 
 @media only screen and (device-width >= 961px) {
-  .mobile_menu {
+  .mobile_menu, .mobile_icons {
     display: none !important;
-  }
-
-  .mobile_icons {
-    background-color: red;
-    border: 1px solid #4d4d4d;
   }
 }
 
