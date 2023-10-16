@@ -19,7 +19,7 @@
   display: flex;
 }
 
-.navbar .hamburger_mobile, .navbar .search_mobile {
+.navbar .mobile_icons, .navbar .hamburger_mobile, .navbar .search_mobile {
   display: none;
 }
 
@@ -580,6 +580,11 @@
 @media only screen and (device-width >= 961px) {
   .mobile_menu {
     display: none !important;
+  }
+
+  .mobile_icons {
+    background-color: red;
+    border: 1px solid #4d4d4d;
   }
 }
 
