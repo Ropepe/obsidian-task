@@ -23,6 +23,10 @@
   padding: 1rem 6rem;
   align-items: center;
 
+  .mobile_icons {
+    display: none;
+  }
+
   .hamburger_mobile {
     display: none;
   }
@@ -482,6 +486,7 @@
       gap: 1rem;
       align-items: flex-start;
       flex-direction: row;
+
     }
 
     .hamburger_mobile {
@@ -635,6 +640,10 @@
 
 @media only screen and (min-device-width: 961px) {
   .mobile_menu {
+    display: none !important;
+  }
+
+  .mobile_icons {
     display: none !important;
   }
 }

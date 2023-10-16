@@ -19,7 +19,7 @@
   display: flex;
 }
 
-.navbar .hamburger_mobile, .navbar .search_mobile {
+.navbar .mobile_icons, .navbar .hamburger_mobile, .navbar .search_mobile {
   display: none;
 }
 
@@ -578,7 +578,7 @@
 }
 
 @media only screen and (device-width >= 961px) {
-  .mobile_menu {
+  .mobile_menu, .mobile_icons {
     display: none !important;
   }
 }
