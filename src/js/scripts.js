@@ -1,4 +1,4 @@
-function readFirst() {
+export function readFirst() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
 
@@ -11,7 +11,7 @@ function readFirst() {
   }
 }
 
-function readSecond() {
+export function readSecond() {
   var moreText = document.getElementById("more2");
   var btnText = document.getElementById("myBtn2");
 
@@ -23,7 +23,7 @@ function readSecond() {
     btnText.innerHTML = "+";
   }
 }
-function readThird() {
+export function readThird() {
   var moreText = document.getElementById("more3");
   var btnText = document.getElementById("myBtn3");
 
@@ -35,7 +35,7 @@ function readThird() {
     btnText.innerHTML = "+";
   }
 }
-function addToCart(){
+export function addToCart(){
   const element = document.getElementById('cartIcon')
 
 // element.classList.remove('classname'); // reset animation
@@ -43,24 +43,24 @@ function addToCart(){
 // element.classList.add('classname'); // start animation
 }
 
-function increase(){
+export function increase(){
   var input = document.getElementById('quantity_number');
   
   input.value = parseInt(input.value) + 1;
 }
 
-function decrease(){
+export function decrease(){
   var input = document.getElementById('quantity_number');
 
   if(input.value > 1){
     input.value = parseInt(input.value) - 1;}
 }
 
-function openMenu(){
+export function openMenu(){
   var menu = document.getElementById('menu_mobile');
   menu.style.display = "block";
 }
-function closeMenu(){
+export function closeMenu(){
   var menu = document.getElementById('menu_mobile');
   menu.style.display = "none";
 }
