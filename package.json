@@ -7,7 +7,7 @@
     "build": "parcel build ./src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Perica Vrhovac",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.0",
