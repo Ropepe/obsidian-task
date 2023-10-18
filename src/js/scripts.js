@@ -10,6 +10,7 @@ function readFirst() {
     btnText.innerHTML = "+";
   }
 }
+
 function readSecond() {
   var moreText = document.getElementById("more2");
   var btnText = document.getElementById("myBtn2");
@@ -47,6 +48,7 @@ function increase(){
   
   input.value = parseInt(input.value) + 1;
 }
+
 function decrease(){
   var input = document.getElementById('quantity_number');
 
