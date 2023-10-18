@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"beUwC":[function(require,module,exports) {
+})({"ciGIJ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
+module.bundle.HMR_BUNDLE_ID = "a4579e5764a4978e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -574,8 +574,103 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"4M6V8":[function(require,module,exports) {
+},{}],"goJYj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "readFirst", ()=>readFirst);
+parcelHelpers.export(exports, "readSecond", ()=>readSecond);
+parcelHelpers.export(exports, "readThird", ()=>readThird);
+parcelHelpers.export(exports, "addToCart", ()=>addToCart);
+parcelHelpers.export(exports, "increase", ()=>increase);
+parcelHelpers.export(exports, "decrease", ()=>decrease);
+parcelHelpers.export(exports, "openMenu", ()=>openMenu);
+parcelHelpers.export(exports, "closeMenu", ()=>closeMenu);
+function readFirst() {
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btnText.innerHTML = "-";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "+";
+    }
+}
+function readSecond() {
+    var moreText = document.getElementById("more2");
+    var btnText = document.getElementById("myBtn2");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btnText.innerHTML = "-";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "+";
+    }
+}
+function readThird() {
+    var moreText = document.getElementById("more3");
+    var btnText = document.getElementById("myBtn3");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btnText.innerHTML = "-";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "+";
+    }
+}
+function addToCart() {
+    const element = document.getElementById("cartIcon");
+// element.classList.remove('classname'); // reset animation
+// void element.offsetWidth; // trigger reflow
+// element.classList.add('classname'); // start animation
+}
+function increase() {
+    var input = document.getElementById("quantity_number");
+    input.value = parseInt(input.value) + 1;
+}
+function decrease() {
+    var input = document.getElementById("quantity_number");
+    if (input.value > 1) input.value = parseInt(input.value) - 1;
+}
+function openMenu() {
+    var menu = document.getElementById("menu_mobile");
+    menu.style.display = "block";
+}
+function closeMenu() {
+    var menu = document.getElementById("menu_mobile");
+    menu.style.display = "none";
+}
 
-},{}]},["beUwC","4M6V8"], "4M6V8", "parcelRequire9919")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
-//# sourceMappingURL=obsidian-task.59712999.js.map
+},{}]},["ciGIJ","goJYj"], "goJYj", "parcelRequire9919")
+
+//# sourceMappingURL=index.64a4978e.js.map
